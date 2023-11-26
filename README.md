@@ -17,7 +17,7 @@ Plugin requires at least [Paper](https://github.com/PaperMC/Paper), won't work o
 - PAPI placeholders
 - Ability to change both sides of the sign
 
-### Other features
+### Other
 - Fully customizable messages with a lang file, supporting [PlaceholderAPI](https://github.com/PlaceholderAPI/PlaceholderAPI) and [MiniMessage](https://docs.advntr.dev/minimessage/index.html)
 - Commands with tab completions
 - API for developers
@@ -27,7 +27,7 @@ Plugin requires at least [Paper](https://github.com/PaperMC/Paper), won't work o
 ![item name](https://i.imgur.com/WhpHY5b.gif)
 ### Item lore
 ![item lore](https://i.imgur.com/tCk02wQ.gif)
-![item lore result](https://i.imgur.com/qqjoXo7.png)
+![item lore result](https://i.imgur.com/USRStmp.png)
 ### Edit sign
 ![edit sign - front](https://i.imgur.com/WjczAF9.gif)
 ![edit sign result - front](https://i.imgur.com/HNz74CI.png)
