@@ -1,0 +1,98 @@
+################################
+#                              #
+#     Lang file by Ynfuien     #
+#                              #
+################################
+
+
+#### Quick info:
+# 1. If you don't want a message to be sent, just set it empty - ''
+
+# 2. You can use MiniMessage formatting for custom colors and formats!
+# If you don't know how, then here is documentation:
+# https://docs.advntr.dev/minimessage/format.html
+
+# 3. PlaceholderAPI is supported
+
+# 4. Plugin placeholders are within curly brackets - {placeholder}
+# And can have additional flags:
+# ! - no formatting
+# @ - no papi
+# # - escaped double quotes (")
+# To use a flag for placeholder, append it before the name - {!placeholder}
+# You can also combine flags, so for example {@#placeholder}, will not parse PAPI placeholders,
+# and will escape double quotes (" will become \").
+# ! - is useful for player input, that is not supposed to be formatted
+# @ - for input that's supposed to be formatted, but not with papi
+# # - for things that can contain double quotes, and you want them in hover/click event
+
+
+# Prefix that will be used for {prefix} placeholder
+prefix: '<dark_aqua>[<bold><aqua>Y<gradient:#B833FF:#617EFF:#FF479A>ColorfulItems</gradient></bold><dark_aqua>]<reset>'
+
+plugin-is-reloading: '{prefix} <red>Plugin is reloading, wait a second..'
+
+# Main
+command-main-usage: '{prefix} <aqua>Command''s usage: /{command} <reload | version>'
+command-main-fail-no-permission: '{prefix} <red>You don''t have permission for this command!'
+command-main-reload-fail: '{prefix} <red>An error occurred while reloading plugin. Take a look in the console for more information!'
+command-main-reload-success: '{prefix} <aqua>Plugin was <green>successfully <aqua>reloaded!'
+command-main-version:
+  - '{prefix} <dark_aqua>Plugin info:'
+  - '{prefix} <aqua>Name: <white>{name}'
+  - '{prefix} <aqua>Version: <green>{version}'
+  - '{prefix} <aqua>Author: <click:open_url:"{website}"><hover:show_text:"{website}"><white>{author}</click>'
+
+# Itemname
+command-itemname-usage: '{prefix} <gray>Command usage: /{command} <new name>'
+command-itemname-info:
+  - '{prefix} <yellow>Item name info:'
+  - '<aqua>Formatted: <click:copy_to_clipboard:"{@#name-minimessage}"><hover:show_text:"<gray>Click to copy!"><white>{@name-minimessage}</hover></click>'
+  - '<aqua>Unformatted: <click:copy_to_clipboard:"{@#name-legacy}"><hover:show_text:"<gray>{!name-legacy}"><dark_aqua>(Hover)</hover></click>'
+  - '<aqua>Signature: <click:copy_to_clipboard:"{signature-uuid}"><hover:show_text:"<gray>{signature-uuid}"><#41facf>{signature-username}</hover></click>'
+  - '<gray>Use /{command} <new name>, to change the name.'
+command-itemname-info-no-name: '{prefix} <gray>Item doesn''t have custom name set, use /{command} <new name>, to change the name.'
+command-itemname-fail-only-player: '{prefix} <red>You need to be a player, to use this command!'
+command-itemname-fail-no-item: '{prefix} <red>You need to hold an item to rename it!'
+command-itemname-success: '{prefix} <aqua>Changed item''s name to <white>{@name-minimessage}<reset><aqua>!'
+command-itemname-success-reset: '{prefix} <aqua>Held item''s name has been reset!'
+
+# Itemlore
+command-itemlore-usage: '{prefix} <gray>Command usage: /{command} <show | add | set | remove> [line number] [lore]'
+command-itemlore-fail-no-permission: '{prefix} <red>You don''t have permission for this command!'
+command-itemlore-fail-only-player: '{prefix} <red>You need to be a player, to use this command!'
+command-itemlore-fail-no-item: '{prefix} <red>You need to hold an item to change it''s lore!'
+command-itemlore-fail-add-no-lore: '{prefix} <red>Provide the lore that you want to add!'
+command-itemlore-fail-add-reach-limit: '{prefix} <red>Next line would exceed the limit of <dark_red>{limit} <red>lines!'
+command-itemlore-fail-set-no-lore: '{prefix} <red>Provide the lore that you want to set!'
+command-itemlore-fail-set-no-number: '{prefix} <red>Provide the line number that you want to change!'
+command-itemlore-fail-set-reach-limit: '{prefix} <red>Line number can''t be higher than <dark_red>{limit}<red>!'
+command-itemlore-fail-remove-no-number: '{prefix} <red>Provide the line number that you want to remove!'
+command-itemlore-fail-remove-line-doesnt-exist: '{prefix} <red>This item''s lore doesn''t have that line!'
+command-itemlore-fail-incorrect-number: '{prefix} <red>Provided line number is incorrect!'
+command-itemlore-fail-no-lore: '{prefix} <red>This item has no lore!'
+command-itemlore-confirm-clear: '{prefix} <gray>Type <red>/{command} clear -y <gray>to confirm!'
+command-itemlore-success-add: '{prefix} <aqua>Added line <dark_purple><italic>{@line-text} <reset><aqua>to item''s lore!'
+command-itemlore-success-add-empty: '{prefix} <aqua>Added an <dark_aqua>empty line <aqua>to item''s lore!'
+command-itemlore-success-remove: '{prefix} <aqua>Removed <dark_aqua><hover:show_text:"<dark_purple><italic>{@#line-text}">line {line-number}</hover> <aqua>from item''s lore!'
+command-itemlore-success-set: '{prefix} <aqua>Set <dark_aqua>line {line-number} <aqua>of item''s lore to <dark_purple><italic>{@line-text}<reset><aqua>!'
+command-itemlore-success-set-empty: '{prefix} <aqua>Set <dark_aqua>line {line-number} <aqua>of item''s lore to an emptiness!'
+command-itemlore-success-clear: '{prefix} <aqua>Item''s lore has been cleared!'
+command-itemlore-show-header: '{prefix} <yellow>Item''s lore:'
+command-itemlore-show-line: '<gray>{line-number}. <click:copy_to_clipboard:"{@#line-text-legacy}"><hover:show_text:"{!line-text-legacy}"><dark_purple><italic>{@line-text-minimessage}</hover></click>'
+
+# Editsign
+command-editsign-usage: '{prefix} <gray>Command usage: /{command} <show | set | clear> [line number] [text]'
+command-editsign-fail-no-permission: '{prefix} <red>You don''t have permission for this command!'
+command-editsign-fail-only-player: '{prefix} <red>You need to be a player, to use this command!'
+command-editsign-fail-no-sign: '{prefix} <red>You need to look at a sign to edit it!'
+command-editsign-fail-set-no-number: '{prefix} <red>Provide the number of the line that you want to set!'
+command-editsign-fail-set-no-text: '{prefix} <red>Provide the text that you want to set!'
+command-editsign-fail-set-above-limit: '{prefix} <red>Text can''t be longer than <dark_red>{line-limit} <red>characters!'
+command-editsign-fail-clear-no-number: '{prefix} <red>Provide the number of the line that you want to clear!'
+command-editsign-fail-clear-empty: '{prefix} <red>This line is already empty!'
+command-editsign-fail-incorrect-number: '{prefix} <red>Provided line number is incorrect!'
+command-editsign-success-set: '{prefix} <aqua>Set <dark_aqua>line {line-number} <aqua>of the sign to <white>{@line-text}<reset><aqua>!'
+command-editsign-success-clear: '{prefix} <aqua>Cleared <dark_aqua><hover:show_text:"<white>{@#line-text}">line {line-number}</hover> <aqua>of the sign!'
+command-editsign-show-header: '{prefix} <yellow>Sign lines:'
+command-editsign-show-line: '<gray>{line-number}. <click:copy_to_clipboard:"{@#line-text-legacy}"><hover:show_text:"{!line-text-legacy}"><white>{@line-text-minimessage}</hover></click>'

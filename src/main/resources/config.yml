@@ -1,0 +1,36 @@
+commands:
+  itemname:
+    # Color format that will be used in tab completions.
+    # Available options: legacy, minimessage
+    completions-format: 'legacy'
+    # Whether to save UUID of the player, that renamed the item.
+    # UUID will be saved inside item's NBT.
+    # Keep in mind, that signatures will prevent stacking
+    # items named by different players.
+    signatures: true
+    # Disable entirely usage of the PlaceholderAPI placeholders
+    # in item names. Even if player has permission for it.
+    disable-papi: false
+
+  itemlore:
+    # Whether clear subcommand requires confirmation
+    clear-confirm: true
+    # Color format that will be used in tab completions.
+    # Available options: legacy, minimessage
+    completions-format: 'legacy'
+    # Max number of lines that can be added to the lore
+    line-limit: 100
+    # Disable entirely usage of the PlaceholderAPI placeholders
+    # in item lore. Even if player has permission for it.
+    disable-papi: false
+
+  editsign:
+    # Color format that will be used in tab completions.
+    # Available options: legacy, minimessage
+    completions-format: 'legacy'
+    # Max number of characters in one line.
+    # This limit doesn't count parsed colors and formats.
+    line-limit: 50
+    # Disable entirely usage of the PlaceholderAPI placeholders
+    # on the signs. Even if player has permission for it.
+    disable-papi: false

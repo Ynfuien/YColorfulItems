@@ -1,0 +1,29 @@
+name: '${project.name}'
+version: '${project.version}'
+main: pl.ynfuien.ycolorfulitems.YColorfulItems
+api-version: '1.20'
+softdepend: [PlaceholderAPI]
+author: Ynfuien
+description: '${project.description}'
+website: '${project.url}'
+
+commands:
+  ycolorfulitems:
+    aliases: [yci]
+    description: Plugin's main command
+    permission: ycolorfulitems.main
+
+  itemname:
+    aliases: [ itemrename, rename ]
+    description: Renames held item
+    permission: ycolorfulitems.itemname
+
+  itemlore:
+    aliases: [ lore ]
+    description: Manages lore of the held item
+    permission: ycolorfulitems.itemlore
+
+  editsign:
+    aliases: [ sign ]
+    description: Edits sign that player is looking at
+    permission: ycolorfulitems.editsign
