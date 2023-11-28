@@ -81,12 +81,12 @@ public class ColorFormatter {
 
 
     // Parses player's text with legacy, MiniMessage and PAPI formats
-    public Component format(Player p, String text) {
+    public Component format(CommandSender p, String text) {
         return format(p, text, true);
     }
 
     // Parses player's text with legacy, MiniMessage and PAPI formats
-    public Component format(Player p, String text, boolean usePapi) {
+    public Component format(CommandSender p, String text, boolean usePapi) {
         if (usePapi && p.hasPermission(permissionBase + ".papi")) text = parsePAPI(p, text);
         return parseFormats(p, text);
     }
@@ -114,7 +114,7 @@ public class ColorFormatter {
 
     // Checks player's permissions for colors/styles and parses message using those
     private static final Pattern MM_TAG_PATTERN = Pattern.compile("<.+>");
-    private Component parseFormats(Player p, String message) {
+    private Component parseFormats(CommandSender p, String message) {
         MiniMessage serializer = MiniMessage.builder()
                 .postProcessor(new LegacyPostProcessor(p, permissionBase))
                 .tags(TagResolver.empty())
