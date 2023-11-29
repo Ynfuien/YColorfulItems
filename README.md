@@ -22,6 +22,9 @@ Plugin requires at least [Paper](https://github.com/PaperMC/Paper), won't work o
 - Commands with tab completions
 - API for developers
 
+# Download
+You can download the plugin only on [Modrinth](https://modrinth.com/plugin/ycolorfulitems), or compile it by youself.
+
 # Media
 ### Item name
 ![item name](https://i.imgur.com/WhpHY5b.gif)
