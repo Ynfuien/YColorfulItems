@@ -20,7 +20,7 @@ Plugin requires at least [Paper](https://github.com/PaperMC/Paper), won't work o
 ### Other
 - Fully customizable messages with a lang file, supporting [PlaceholderAPI](https://github.com/PlaceholderAPI/PlaceholderAPI) and [MiniMessage](https://docs.advntr.dev/minimessage/index.html)
 - Commands with tab completions
-- API for developers
+- [API](https://github.com/Ynfuien/YColorfulItems/wiki/4.-Developer-API) for developers
 
 # Download
 You can download the plugin only on [Modrinth](https://modrinth.com/plugin/ycolorfulitems), or compile it by youself.
