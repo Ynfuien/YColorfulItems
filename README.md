@@ -1,6 +1,5 @@
 # YColorfulItems
-Colour and format you items and signs! Made for **1.20.2**, but should also work on higher versions.
-Plugin requires at least [Paper](https://github.com/PaperMC/Paper), won't work on Spigot nor Bukkit.
+Colour and format your items and signs! Plugin requires at least [Paper](https://github.com/PaperMC/Paper), won't work on Spigot nor Bukkit. Supports 1.20+
 
 # Features
 ### Item name
