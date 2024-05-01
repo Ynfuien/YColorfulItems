@@ -106,6 +106,7 @@ public class SetSubcommand implements Subcommand {
         formatted = event.getFormattedLine();
 
         signSide.line(lineNumber, formatted);
+        if (config.isEditsignAutoWax()) sign.setWaxed(true);
         sign.update();
 
         placeholders.put("line-text", MiniMessage.miniMessage().serialize(formatted));

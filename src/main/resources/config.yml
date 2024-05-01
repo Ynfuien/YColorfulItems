@@ -25,6 +25,9 @@ commands:
     disable-papi: false
 
   editsign:
+    # Whether to automatically make edited sign waxed,
+    # to prevent editing it by right-clicking.
+    auto-wax: true
     # Color format that will be used in tab completions.
     # Available options: legacy, minimessage
     completions-format: 'legacy'

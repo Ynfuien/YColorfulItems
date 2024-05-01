@@ -19,6 +19,7 @@ public class CommandsConfig {
     private boolean itemloreDisablePAPI;
 
     // Editsign
+    private boolean editsignAutoWax;
     private boolean editsignCompletionsMiniMessage;
     private int editsignLineLimit;
     private boolean editsignDisablePAPI;
@@ -54,6 +55,7 @@ public class CommandsConfig {
         itemloreDisablePAPI = config.getBoolean("itemlore.disable-papi");
 
         // Editsign
+        editsignAutoWax = config.getBoolean("editsign.auto-wax");
         completionsFormat = config.getString("editsign.completions-format");
         if (!checkCompletionsFormat(completionsFormat)) {
             editsignCompletionsMiniMessage = false;
@@ -102,6 +104,9 @@ public class CommandsConfig {
     }
 
     // Editsign
+    public boolean isEditsignAutoWax() {
+        return editsignAutoWax;
+    }
     public boolean isEditsignCompletionsMiniMessage() {
         return editsignCompletionsMiniMessage;
     }
