@@ -22,7 +22,7 @@ Colour and format your items and signs! Plugin requires at least [Paper](https:/
 - [API](https://github.com/Ynfuien/YColorfulItems/wiki/4.-Developer-API) for developers
 
 # Download
-You can download the plugin only on [Modrinth](https://modrinth.com/plugin/ycolorfulitems), or compile it by youself.
+You can download the plugin only on [Modrinth](https://modrinth.com/plugin/ycolorfulitems), or compile it by yourself.
 
 # Documentation
 You can read about plugin's [permissions](https://github.com/Ynfuien/YColorfulItems/wiki/2.-Permissions), [placeholders](https://github.com/Ynfuien/YColorfulItems/wiki/3.-Placeholders) etc. on the [wiki](https://github.com/Ynfuien/YColorfulItems/wiki) page.
