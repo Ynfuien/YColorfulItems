@@ -64,7 +64,6 @@ public class ShowSubcommand implements Subcommand {
             placeholders.put("line-text-legacy", ColorFormatter.LEGACY_SERIALIZER.serialize(line));
             placeholders.put("line-text-minimessage", MiniMessage.miniMessage().serialize(line));
 
-            System.out.println(ColorFormatter.LEGACY_SERIALIZER.serialize(line));
             Lang.Message.COMMAND_EDITSIGN_SHOW_LINE.send(p, placeholders);
         }
     }
