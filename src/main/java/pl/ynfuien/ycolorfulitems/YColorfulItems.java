@@ -1,5 +1,6 @@
 package pl.ynfuien.ycolorfulitems;
 
+import org.bstats.bukkit.Metrics;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.TabCompleter;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -36,6 +37,9 @@ public final class YColorfulItems extends JavaPlugin {
         setupCommands();
 
         Hooks.load(this);
+
+        // BStats
+        new Metrics(this, 22169);
 
         YLogger.info("Plugin successfully <green>enabled<white>!");
     }
