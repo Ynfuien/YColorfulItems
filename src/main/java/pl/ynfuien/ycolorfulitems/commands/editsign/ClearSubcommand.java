@@ -8,11 +8,11 @@ import org.bukkit.block.Sign;
 import org.bukkit.block.sign.SignSide;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import pl.ynfuien.ycolorfulitems.CommandsConfig;
+import pl.ynfuien.ycolorfulitems.Lang;
 import pl.ynfuien.ycolorfulitems.api.event.SignEditEvent;
 import pl.ynfuien.ycolorfulitems.commands.Subcommand;
 import pl.ynfuien.ycolorfulitems.commands.YCommand;
-import pl.ynfuien.ycolorfulitems.utils.Lang;
+import pl.ynfuien.ycolorfulitems.config.CommandsConfig;
 
 import java.util.ArrayList;
 import java.util.HashMap;

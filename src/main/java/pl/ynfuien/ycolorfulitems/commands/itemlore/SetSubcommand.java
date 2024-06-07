@@ -8,12 +8,12 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-import pl.ynfuien.ycolorfulitems.CommandsConfig;
+import pl.ynfuien.ycolorfulitems.Lang;
 import pl.ynfuien.ycolorfulitems.api.event.ItemLoreChangeEvent;
-import pl.ynfuien.ycolorfulitems.colors.ColorFormatter;
 import pl.ynfuien.ycolorfulitems.commands.Subcommand;
 import pl.ynfuien.ycolorfulitems.commands.YCommand;
-import pl.ynfuien.ycolorfulitems.utils.Lang;
+import pl.ynfuien.ycolorfulitems.config.CommandsConfig;
+import pl.ynfuien.ydevlib.messages.colors.ColorFormatter;
 
 import java.util.ArrayList;
 import java.util.Arrays;

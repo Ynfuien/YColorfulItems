@@ -15,10 +15,10 @@ import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import pl.ynfuien.ycolorfulitems.Lang;
 import pl.ynfuien.ycolorfulitems.YColorfulItems;
 import pl.ynfuien.ycolorfulitems.api.event.ItemNameChangeEvent;
-import pl.ynfuien.ycolorfulitems.colors.ColorFormatter;
-import pl.ynfuien.ycolorfulitems.utils.Lang;
+import pl.ynfuien.ydevlib.messages.colors.ColorFormatter;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -20,11 +20,11 @@ import org.bukkit.util.RayTraceResult;
 import org.bukkit.util.Vector;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import pl.ynfuien.ycolorfulitems.Lang;
 import pl.ynfuien.ycolorfulitems.YColorfulItems;
-import pl.ynfuien.ycolorfulitems.colors.ColorFormatter;
 import pl.ynfuien.ycolorfulitems.commands.Subcommand;
 import pl.ynfuien.ycolorfulitems.commands.YCommand;
-import pl.ynfuien.ycolorfulitems.utils.Lang;
+import pl.ynfuien.ydevlib.messages.colors.ColorFormatter;
 
 import java.util.Arrays;
 import java.util.HashMap;

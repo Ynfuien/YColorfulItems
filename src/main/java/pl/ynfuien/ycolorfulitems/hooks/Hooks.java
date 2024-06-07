@@ -3,7 +3,7 @@ package pl.ynfuien.ycolorfulitems.hooks;
 import org.bukkit.Bukkit;
 import pl.ynfuien.ycolorfulitems.YColorfulItems;
 import pl.ynfuien.ycolorfulitems.hooks.placeholderapi.PlaceholderAPIHook;
-import pl.ynfuien.ycolorfulitems.utils.YLogger;
+import pl.ynfuien.ydevlib.messages.YLogger;
 
 public class Hooks {
     private static PlaceholderAPIHook papiHook = null;

@@ -1,10 +1,13 @@
 package pl.ynfuien.ycolorfulitems.config;
 
-public enum ConfigName {
+import pl.ynfuien.ydevlib.config.ConfigObject;
+
+public enum ConfigName implements ConfigObject.Name {
     LANG,
     CONFIG;
 
-    String getFileName() {
+    @Override
+    public String getFileName() {
         return name().toLowerCase().replace('_', '-') + ".yml";
     }
 }

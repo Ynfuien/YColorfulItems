@@ -8,14 +8,13 @@ import pl.ynfuien.ycolorfulitems.commands.ItemnameCommand;
 import pl.ynfuien.ycolorfulitems.commands.editsign.EditsignCommand;
 import pl.ynfuien.ycolorfulitems.commands.itemlore.ItemloreCommand;
 import pl.ynfuien.ycolorfulitems.commands.main.MainCommand;
-import pl.ynfuien.ycolorfulitems.config.ConfigHandler;
+import pl.ynfuien.ycolorfulitems.config.CommandsConfig;
 import pl.ynfuien.ycolorfulitems.config.ConfigName;
 import pl.ynfuien.ycolorfulitems.hooks.Hooks;
-import pl.ynfuien.ycolorfulitems.utils.Lang;
-import pl.ynfuien.ycolorfulitems.utils.YLogger;
+import pl.ynfuien.ydevlib.config.ConfigHandler;
+import pl.ynfuien.ydevlib.messages.YLogger;
 
 import java.util.HashMap;
-import java.util.List;
 
 public final class YColorfulItems extends JavaPlugin {
     private static YColorfulItems instance;
@@ -31,13 +30,12 @@ public final class YColorfulItems extends JavaPlugin {
 
         loadConfigs();
         loadLang();
-        config = new CommandsConfig(configHandler.get(ConfigName.CONFIG));
+        config = new CommandsConfig(configHandler.getConfigObject(ConfigName.CONFIG));
         config.load();
 
         setupCommands();
 
         Hooks.load(this);
-
 
         YLogger.info("Plugin successfully <green>enabled<white>!");
     }
@@ -73,7 +71,7 @@ public final class YColorfulItems extends JavaPlugin {
     }
 
     private void loadConfigs() {
-        configHandler.load(ConfigName.CONFIG, true, false, List.of("commands.entity.fields"));
+        configHandler.load(ConfigName.CONFIG);
         configHandler.load(ConfigName.LANG, true, true);
     }
 

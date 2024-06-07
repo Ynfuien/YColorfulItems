@@ -6,9 +6,9 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import pl.ynfuien.ycolorfulitems.CommandsConfig;
+import pl.ynfuien.ycolorfulitems.Lang;
 import pl.ynfuien.ycolorfulitems.YColorfulItems;
-import pl.ynfuien.ycolorfulitems.utils.Lang;
+import pl.ynfuien.ycolorfulitems.config.CommandsConfig;
 
 import java.util.ArrayList;
 import java.util.Arrays;

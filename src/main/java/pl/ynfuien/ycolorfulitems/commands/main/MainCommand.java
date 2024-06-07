@@ -4,10 +4,10 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import pl.ynfuien.ycolorfulitems.Lang;
 import pl.ynfuien.ycolorfulitems.YColorfulItems;
 import pl.ynfuien.ycolorfulitems.commands.Subcommand;
 import pl.ynfuien.ycolorfulitems.commands.YCommand;
-import pl.ynfuien.ycolorfulitems.utils.Lang;
 
 import java.util.Arrays;
 import java.util.HashMap;

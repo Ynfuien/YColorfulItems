@@ -2,10 +2,10 @@ package pl.ynfuien.ycolorfulitems.commands.main;
 
 import io.papermc.paper.plugin.configuration.PluginMeta;
 import org.bukkit.command.CommandSender;
+import pl.ynfuien.ycolorfulitems.Lang;
 import pl.ynfuien.ycolorfulitems.YColorfulItems;
 import pl.ynfuien.ycolorfulitems.commands.Subcommand;
 import pl.ynfuien.ycolorfulitems.commands.YCommand;
-import pl.ynfuien.ycolorfulitems.utils.Lang;
 
 import java.util.HashMap;
 import java.util.List;

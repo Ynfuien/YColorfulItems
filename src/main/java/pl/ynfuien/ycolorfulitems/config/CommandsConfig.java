@@ -1,8 +1,8 @@
-package pl.ynfuien.ycolorfulitems;
+package pl.ynfuien.ycolorfulitems.config;
 
 import org.bukkit.configuration.ConfigurationSection;
-import pl.ynfuien.ycolorfulitems.config.ConfigObject;
-import pl.ynfuien.ycolorfulitems.utils.YLogger;
+import pl.ynfuien.ydevlib.config.ConfigObject;
+import pl.ynfuien.ydevlib.messages.YLogger;
 
 public class CommandsConfig {
     private final ConfigObject config;
