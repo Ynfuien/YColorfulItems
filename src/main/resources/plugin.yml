@@ -3,13 +3,14 @@ version: '${project.version}'
 main: pl.ynfuien.ycolorfulitems.YColorfulItems
 api-version: '1.20'
 softdepend: [PlaceholderAPI]
-author: Ynfuien
+authors: [Ynfuien]
 description: '${project.description}'
 website: '${project.url}'
+folia-supported: true
 
 commands:
   ycolorfulitems:
-    aliases: [yci]
+    aliases: [ yci ]
     description: Plugin's main command
     permission: ycolorfulitems.main
 
