@@ -42,4 +42,4 @@ commands:
     # Supported plugins: WorldGuard, Towny, SuperiorSkyblock2
     # You can bypass this check with permission:
     # ycolorfulitems.editsign.bypass-protection
-    check-region-permissions: true
+    check-region-protection: true

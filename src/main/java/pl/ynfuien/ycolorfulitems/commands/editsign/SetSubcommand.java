@@ -90,10 +90,12 @@ public class SetSubcommand implements Subcommand {
         Sign sign = target.getKey();
         SignSide signSide = target.getValue();
 
-        if (!p.hasPermission(String.format("%s.%s", command.permissionBase, "bypass-protection"))) {
-            if (!Hooks.canEditSign(p, sign.getBlock())) {
-                Lang.Message.COMMAND_EDITSIGN_FAIL_PROTECTED_REGION.send(sender, placeholders);
-                return;
+        if (config.isCheckRegionProtection()) {
+            if (!p.hasPermission(String.format("%s.%s", command.permissionBase, "bypass-protection"))) {
+                if (!Hooks.canEditSign(p, sign.getBlock())) {
+                    Lang.Message.COMMAND_EDITSIGN_FAIL_PROTECTED_REGION.send(sender, placeholders);
+                    return;
+                }
             }
         }
 

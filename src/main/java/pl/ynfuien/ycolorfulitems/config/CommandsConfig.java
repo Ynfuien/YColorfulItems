@@ -23,6 +23,7 @@ public class CommandsConfig {
     private boolean editsignCompletionsMiniMessage;
     private int editsignLineLimit;
     private boolean editsignDisablePAPI;
+    private boolean checkRegionProtection;
 
     public CommandsConfig(ConfigObject config) {
         this.config = config;
@@ -65,6 +66,7 @@ public class CommandsConfig {
         }
         editsignLineLimit = config.getInt("editsign.line-limit");
         editsignDisablePAPI = config.getBoolean("editsign.disable-papi");
+        checkRegionProtection = config.getBoolean("editsign.check-region-protection");
 
         return true;
     }
@@ -115,5 +117,8 @@ public class CommandsConfig {
     }
     public boolean isEditsignDisablePAPI() {
         return editsignDisablePAPI;
+    }
+    public boolean isCheckRegionProtection() {
+        return checkRegionProtection;
     }
 }

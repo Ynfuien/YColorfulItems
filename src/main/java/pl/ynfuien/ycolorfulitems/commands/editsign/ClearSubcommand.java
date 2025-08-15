@@ -13,6 +13,7 @@ import pl.ynfuien.ycolorfulitems.api.event.SignEditEvent;
 import pl.ynfuien.ycolorfulitems.commands.Subcommand;
 import pl.ynfuien.ycolorfulitems.commands.YCommand;
 import pl.ynfuien.ycolorfulitems.config.CommandsConfig;
+import pl.ynfuien.ycolorfulitems.hooks.Hooks;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -77,8 +78,17 @@ public class ClearSubcommand implements Subcommand {
             return;
         }
 
-        Sign sign = target.getLeft();
-        SignSide signSide = target.getRight();
+        Sign sign = target.getKey();
+        SignSide signSide = target.getValue();
+
+        if (config.isCheckRegionProtection()) {
+            if (!p.hasPermission(String.format("%s.%s", command.permissionBase, "bypass-protection"))) {
+                if (!Hooks.canEditSign(p, sign.getBlock())) {
+                    Lang.Message.COMMAND_EDITSIGN_FAIL_PROTECTED_REGION.send(sender, placeholders);
+                    return;
+                }
+            }
+        }
 
         Component lineText = signSide.line(lineNumber);
         if (lineText.equals(Component.empty())) {
