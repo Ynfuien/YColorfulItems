@@ -86,6 +86,7 @@ command-editsign-usage: '{prefix} <gray>Command usage: /{command} <show | set | 
 command-editsign-fail-no-permission: '{prefix} <red>You don''t have permission for this command!'
 command-editsign-fail-only-player: '{prefix} <red>You need to be a player, to use this command!'
 command-editsign-fail-no-sign: '{prefix} <red>You need to look at a sign to edit it!'
+command-editsign-fail-protected-region: '{prefix} <red>You can''t edit signs in this place!'
 command-editsign-fail-set-no-number: '{prefix} <red>Provide the number of the line that you want to set!'
 command-editsign-fail-set-no-text: '{prefix} <red>Provide the text that you want to set!'
 command-editsign-fail-set-above-limit: '{prefix} <red>Text can''t be longer than <dark_red>{line-limit} <red>characters!'

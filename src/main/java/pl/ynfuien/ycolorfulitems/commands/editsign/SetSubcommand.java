@@ -14,6 +14,7 @@ import pl.ynfuien.ycolorfulitems.api.event.SignEditEvent;
 import pl.ynfuien.ycolorfulitems.commands.Subcommand;
 import pl.ynfuien.ycolorfulitems.commands.YCommand;
 import pl.ynfuien.ycolorfulitems.config.CommandsConfig;
+import pl.ynfuien.ycolorfulitems.hooks.Hooks;
 import pl.ynfuien.ydevlib.messages.colors.ColorFormatter;
 
 import java.util.ArrayList;
@@ -86,8 +87,15 @@ public class SetSubcommand implements Subcommand {
             return;
         }
 
-        Sign sign = target.getLeft();
-        SignSide signSide = target.getRight();
+        Sign sign = target.getKey();
+        SignSide signSide = target.getValue();
+
+        if (!p.hasPermission(String.format("%s.%s", command.permissionBase, "bypass-protection"))) {
+            if (!Hooks.canEditSign(p, sign.getBlock())) {
+                Lang.Message.COMMAND_EDITSIGN_FAIL_PROTECTED_REGION.send(sender, placeholders);
+                return;
+            }
+        }
 
         String input = String.join(" ", Arrays.copyOfRange(args, 1, args.length));
         Component formatted = EditsignCommand.colorFormatter.format(p, input, !config.isEditsignDisablePAPI());

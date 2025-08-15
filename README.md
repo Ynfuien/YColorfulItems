@@ -2,7 +2,7 @@
 )](https://discord.gg/kZJhKZ48j8)
 
 # YColorfulItems
-Colour and format your items and signs! Plugin requires at least [Paper](https://github.com/PaperMC/Paper), won't work on Spigot nor Bukkit. Supports 1.20+
+Colour and format your items and signs! Plugin requires at least [Paper](https://github.com/PaperMC/Paper), won't work on Spigot nor Bukkit.
 
 # Features
 ### Item name

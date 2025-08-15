@@ -2,7 +2,7 @@ name: '${project.name}'
 version: '${project.version}'
 main: pl.ynfuien.ycolorfulitems.YColorfulItems
 api-version: '1.20'
-softdepend: [PlaceholderAPI]
+softdepend: [PlaceholderAPI, WorldGuard, Towny, SuperiorSkyblock2]
 authors: [Ynfuien]
 description: '${project.description}'
 website: '${project.url}'

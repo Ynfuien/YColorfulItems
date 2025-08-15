@@ -37,3 +37,9 @@ commands:
     # Disable entirely usage of the PlaceholderAPI placeholders
     # on the signs. Even if player has permission for it.
     disable-papi: false
+    # Whether to check if the player running the command
+    # has permission to edit the sign in that region.
+    # Supported plugins: WorldGuard, Towny, SuperiorSkyblock2
+    # You can bypass this check with permission:
+    # ycolorfulitems.editsign.bypass-protection
+    check-region-permissions: true
